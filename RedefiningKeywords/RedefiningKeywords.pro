@@ -11,3 +11,5 @@ SOURCES += main.cpp \
 HEADERS += \
     classwithprivatemembers.h
 
+OTHER_FILES += \
+    README.md
