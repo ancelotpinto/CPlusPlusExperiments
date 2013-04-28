@@ -1,12 +1,12 @@
 #include <iostream>
 
-#ifdef UNLOCK_PRIVATE_MEMBERS
+#ifdef UNLOCK_PRIVATE_VARIABLES
     #define class struct // [1] class keyword redefined as struct
 #endif
 
 #include <classwithprivatemembers.h> // [2] members are now public by default
 
-#ifdef UNLOCK_PRIVATE_MEMBERS
+#ifdef UNLOCK_PRIVATE_VARIABLES
     #undef class
 #endif
 

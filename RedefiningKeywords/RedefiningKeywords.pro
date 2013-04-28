@@ -4,7 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 # uncomment to unlock private member variables
-DEFINES += UNLOCK_PRIVATE_MEMBERS
+DEFINES += UNLOCK_PRIVATE_VARIABLES
 
 SOURCES += main.cpp \
     classwithprivatemembers.cpp
