@@ -2,4 +2,5 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     RedefiningKeywords \
-    CompilationFirewalls
+    CompilationFirewalls \
+    FunctionTemplates
