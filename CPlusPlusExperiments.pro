@@ -3,4 +3,5 @@ TEMPLATE = subdirs
 SUBDIRS += \
     RedefiningKeywords \
     CompilationFirewalls \
-    FunctionTemplates
+    FunctionTemplates \
+    UninitializedClassMembers
