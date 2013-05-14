@@ -1,6 +1,7 @@
 Compilation Firewalls
 =
-C++ assumes that callers know two main things about a class that can be affected by [private members][1]:
+C++ assumes that callers know two main things about a class that can be
+affected by [private members][1]:
 
 **Size and Layout:** The calling code must know the size and layout of the
 class, including private data members. This constraint of always being able to
