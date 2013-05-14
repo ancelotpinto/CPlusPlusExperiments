@@ -4,4 +4,5 @@ SUBDIRS += \
     RedefiningKeywords \
     CompilationFirewalls \
     FunctionTemplates \
-    UninitializedClassMembers
+    UninitializedClassMembers \
+    Functors
