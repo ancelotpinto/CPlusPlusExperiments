@@ -1,18 +1,18 @@
 #include "functorwithstl.h"
 
 FunctorWithSTL::FunctorWithSTL()
-    :mCount()
+    :mCount(new int(0))
 {
 }
 
 void FunctorWithSTL::operator ()(int number)
 {
     if(!(number % 2))
-        mCount++;
+        (*mCount)++;
     return;
 }
 
 int FunctorWithSTL::count()
 {
-    return mCount;
+    return *mCount;
 }

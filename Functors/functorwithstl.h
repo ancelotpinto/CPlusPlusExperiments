@@ -1,9 +1,11 @@
 #ifndef PREDICATEFUNCTOR_H
 #define PREDICATEFUNCTOR_H
 
+#include <memory>
+
 class FunctorWithSTL
 {
-    int mCount;
+    std::tr1::shared_ptr<int> mCount;
 
 public:
     FunctorWithSTL();

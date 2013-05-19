@@ -20,10 +20,10 @@ int main()
 
     FunctorWithSTL count_even;
 
-    // passing functor to for_each gives count of even numbers
-    // the functor is taken by value so assigning return value of for_each
-    // to count_even is needed
-    count_even = for_each(intVector.begin(), intVector.end(), count_even);
+    // while count_even is passed by value to for_each
+    // the internal count is shared across copies of the functor
+    // so all copies have the same value
+    for_each(intVector.begin(), intVector.end(), count_even);
 
     cout << "vecEvenCount: " << count_even.count() << endl;
 
