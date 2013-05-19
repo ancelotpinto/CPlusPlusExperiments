@@ -3,10 +3,12 @@
 
 using namespace std;
 
-template <int (*f)(int)>
+typedef int (*fibFunc)(int);
+
+template <fibFunc f>
 int memoize(int x) {
   static std::map<int, int> cache;
-  std::map<int, int>::iterator y = cache.find(x);
+  auto y = cache.find(x);
   if (y != cache.end()) return y->second;
   return cache[x] = f(x);
 }
