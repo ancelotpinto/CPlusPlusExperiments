@@ -5,4 +5,5 @@ SUBDIRS += \
     CompilationFirewalls \
     FunctionTemplates \
     UninitializedClassMembers \
-    Functors
+    Functors \
+    ClassWithConstFunction
