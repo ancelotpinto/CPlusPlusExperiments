@@ -3,9 +3,11 @@
 
 using namespace std;
 
-template <typename fibReturn, typename fibIndex, fibReturn f(fibIndex)>
-fibReturn memoize(fibIndex x) {
-  static std::map<fibIndex, fibReturn> cache;
+typedef int (*fibFunc)(int);
+
+template <fibFunc f>
+int memoize(int x) {
+  static std::map<int, int> cache;
   auto y = cache.find(x);
   if (y != cache.end()) return y->second;
   return cache[x] = f(x);
@@ -13,7 +15,7 @@ fibReturn memoize(fibIndex x) {
 
 int fib(int n) {
   if (n < 2) return n;
-  return memoize<int, int, fib>(n - 1) + memoize<int, int, fib>(n - 2);
+  return memoize<fib>(n - 1) + memoize<fib>(n - 2);
 }
 
 int main()
