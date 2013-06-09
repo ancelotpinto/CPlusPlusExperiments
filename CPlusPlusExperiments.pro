@@ -6,4 +6,5 @@ SUBDIRS += \
     FunctionTemplates \
     UninitializedClassMembers \
     Functors \
-    ClassWithConstFunction
+    ClassWithConstFunction \
+    TemporaryCatcher
