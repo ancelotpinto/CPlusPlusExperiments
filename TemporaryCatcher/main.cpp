@@ -15,15 +15,15 @@ void catchClass(aClass&){
     cout << "catchClass(aClass&)" << endl;
 }
 void catchClass(const aClassCatcher&){
-    cout << "catchClass(const aClass__&)" << endl;
+    cout << "catchClass(const aClassCatcher&)" << endl;
 }
 
 int main()
 {
     aClass aC;
-    catchClass(aC);
+    catchClass(aC); // calls catchClass(aClass&)
 
-    catchClass(aClass());
+    catchClass(aClass()); // calls catchClass(const aClassCatcher&)
 
 }
 
