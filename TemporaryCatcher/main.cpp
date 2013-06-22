@@ -24,6 +24,8 @@ int main()
     catchClass(aC); // calls catchClass(aClass&)
 
     catchClass(aClass()); // calls catchClass(const aClassCatcher&)
+    // temporaries can't bind to non-const lvalues references
+    // this call fails, except for in VS C++, if catchClass(const aClassCatcher&) is not defined
 
 }
 
