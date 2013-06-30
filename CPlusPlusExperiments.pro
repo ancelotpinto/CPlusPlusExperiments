@@ -7,4 +7,5 @@ SUBDIRS += \
     UninitializedClassMembers \
     Functors \
     ClassWithConstFunction \
-    TemporaryCatcher
+    TemporaryCatcher \
+    SwitchWithNoDefault
